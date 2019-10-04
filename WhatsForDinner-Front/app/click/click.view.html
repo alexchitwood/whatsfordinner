@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row col-list">
+        <div id="recipe" class="col-md-4 t1" ng-repeat="x in  vm.recipe  | filter:search">
+            <div class="col-head text-center"> <span class="glyphicon glyphicon-apple" aria-hidden="true"></span>
+                <h2>{{x.Name}}</h2> </div>
+            <ul class="list-unstyled">
+                <li>
+                    <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true" ng-bind-html="x.description"></span><img src="{{x.image}}" class="img-circle" alt="Cinque Terre" width="304" height="236"> </p>
+                </li>
+                <li>
+                    <p class="option" id="searchHeading"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true" ng-bind-html="x.description"></span> Ingredients</p>
+                </li>
+                <li>
+                    <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true" ng-bind-html="x.description"></span> {{x.Ingredients}}</p>
+                </li>
+                <li>
+                    <p class="option" id="searchHeading"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true" ng-bind-html="x.description"></span>Directions</p>
+                </li>
+                <li>
+                    <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true" ng-bind-html="x.description"></span> {{x.Directions}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<br>

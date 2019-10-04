@@ -1,0 +1,104 @@
+<div id="bodyCheck" class="container-fluid">
+  <div align="center" class="fond">
+    <div class="first_circle"></div>
+    <div class="first_div">
+      <div class="second_div">
+        <div class="img_div"><img id="logo" src="/assets/images/title.png"></div>
+      </div>
+    </div>
+    <hr id="divider" width="100%">
+  </div>
+  <!-- Left Side -->
+  <div id="leftSide" class="col-md-5">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <h3>Suggested Recipes</h3>
+          <div class="col-sm-4" ng-repeat="x in Names">
+            <div class="panel panel-primary">
+              <div class="panel-heading"><a href="#!/click" ng-click="getColorCtrlScope().search.Name = x.title;" id="linkColor"> {{ x.title }}</a></div>
+              <div class="panel-body"><img ng-src="{{x.image}}" id="homeImage" style="width:100%"></div>
+              <div class="panel-footer">{{x.description}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+  <!-- Right Side -->
+  <div class="col-md-5" id="rightSide">
+    <div class="randomButton" class="center">
+      <div class="button">
+        <a href="#!/search"> <span class="demo ">Generate</span> <img src="http://s1.iconbird.com/ico/2013/8/429/w128h1281377940666185116eatfoodhotdogstreamline3.png " alt=" " /> <span class="rep ">Random</span><span class="discr ">Recipe</span> </a>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-md-12 ">
+        <div class="container ">
+          <div class="row col-list " id="withHoverList ">
+            <div class="col-md-4 t1 " id="listReview ">
+              <div class="col-head text-center "> <span class="glyphicon glyphicon-paperclip " aria-hidden="true "></span>
+                <h2>Ingredient List</h2>
+              </div>
+              <ul class="list-unstyled ">
+                <li>
+                  <p class="option "><span class="glyphicon glyphicon-ok inactive " aria-hidden="true "></span>Chicken</p>
+                </li>
+                <li>
+                  <p class="option "><span class="glyphicon glyphicon-ok inactive " aria-hidden="true "></span>Pepper</p>
+                </li>
+                <li>
+                  <p class="option "><span class="glyphicon glyphicon-ok inactive " aria-hidden="true "></span>Basil</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--Next element-->
+        <div class="row ">
+          <div class="col-md-12 ">
+            <div class="panel panel-default ">
+              <div class="panel-heading " id="userHeading ">User Reviews</div>
+              <div class="panel-body " id="userList ">
+                <div class="media ">
+                  <div class="media-left ">
+                    <a href="# "> <img class="media-object img-circle " src="/assets/images/sam.png " alt=" " width=70px> </a>
+                  </div>
+                  <div class="media-body ">
+                    <h4 class="media-heading ">CookieMonsta</h4>
+                    <p>"This is the best recipe website of the century. "</p>
+                  </div>
+                </div>
+                <div class="media ">
+                  <div class="media-left ">
+                    <a href="# "> <img class="media-object img-circle " src="/assets/images/garrett.png " alt=" " width=70px> </a>
+                  </div>
+                  <div class="media-body ">
+                    <h4 class="media-heading ">chefgarrett</h4>
+                    <p>"I love that I 'm able to add my personal recipes! I'm always cooking and using What 's for Dinner?"</p>
+                  </div>
+                </div>
+                <div class="media">
+                  <div class="media-left">
+                    <a href="#"> <img class="media-object img-circle" src="/assets/images/joseph.png" alt="" width=70px> </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">M5g1ggl35</h4>
+                    <p>"haha Now I'm always cooking :P "</p>
+                  </div>
+                </div>
+                <div class="media ">
+                  <div class="media-left ">
+                    <a href="# "> <img class="media-object img-circle " src="/assets/images/wassim.png " alt=" " width=70px> </a>
+                  </div>
+                  <div class="media-body ">
+                    <h4 class="media-heading ">foodjunkie</h4>
+                    <p>"I RATE THIS 5 CUPCAKES! "</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

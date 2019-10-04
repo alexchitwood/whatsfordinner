@@ -1,0 +1,17 @@
+{
+  "name": "whatsfordinnerFront",
+  "version": "1.0.0",
+  "description": "Main website for Whats For Dinner app",
+  "main": "app.js",
+  "dependencies": {
+    "angular": "latest",
+    "angular-cookies": "^1.7.8",
+    "angular-route": "^1.7.8",
+    "bluebird": "latest",
+    "express": "latest",
+    "method-override": "^3.0.0",
+    "mongoose": "latest",
+    "node-restful": "latest",
+    "restify": "latest"
+  }
+}

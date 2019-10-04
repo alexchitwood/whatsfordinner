@@ -1,0 +1,26 @@
+{
+  "name": "whatsfordinner",
+  "version": "1.0.0",
+  "description": "webservice for 'whats for dinner' app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexchitwood/WhatsForDinner-Back.git"
+  },
+  "author": "Alex Chitwood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexchitwood/WhatsForDinner-Back/issues"
+  },
+  "homepage": "https://github.com/alexchitwood/WhatsForDinner-Back#readme",
+  "dependencies": {
+    "express": "latest",
+    "mongoose": "latest",
+    "bluebird": "latest",
+    "node-restful": "latest",
+    "restify": "latest"
+  }
+}
